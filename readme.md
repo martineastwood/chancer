@@ -45,4 +45,4 @@ Take a look at the documentation to see all the functions, but there are a few b
 
 `chancer.areacode`: Returns a random area code.
 
-There are lots of others already included in the package, with more to follow! 
+There are lots of other functions already included in the package, with more to follow! 
