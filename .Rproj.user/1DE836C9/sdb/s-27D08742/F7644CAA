@@ -1,0 +1,16 @@
+{
+    "contents" : "## Chancer - Friendly Regular Expressions For R\n\nChancer is an R package for generating of random strings, numbers, addresses etc to help write automated tests or create anything random you need. Chancer was inspired by the javascript library [chance.js](http://chancejs.com).\n\n### Installation\nChancer is not currently on CRAN as it's still in early development but in the meantime it can be installed in R using devtools\n\n```R\ninstall_github(\"martineastwood/chancer\")\n```\n\n### Examples\n\nTake a look at the documentation to see all the functions, but there are a few brief examples below to give you an idea about chancer:\n\n`chancer.word`: Returns a random semi-pronounceable word with control over number of syllables etc.\n\n`chancer.sentence`: Returns a random sentence constructed from semi-pronounceable made up words.\n\n`chancer.paragraph`: Returns a random paragraph constructed from semi-pronounceable made up sentances.\n\n`chancer.address`: Returns a random address constructed from semi-pronounceable made up words.\n\n`chancer.name`: Returns a random name, with control over gender, prefixs such as Doctor etc.\n\n`chancer.birthday`: Returns a random birthday, with contol of overgroups e.g child, adult etc.\n\n`chancer.colour`: Returns a random rgb / hex / greyscale colour.\n\n`chancer.domain`: Returns a random semi-pronounceable domain name.\n\n`chancer.email`: Returns a random semi-pronounceable email address.\n\n`chancer.ip`: Returns a random ip address.\n\n`chancer.ssn`: Returns a random US social security number.\n\n`chancer.guid`: Returns a random guid.\n\n`chancer.geohash`: Returns a random geohash.\n\n`chancer.coordinates`: Returns random coordinates.\n\n`chancer.city`: Returns a random made up city.\n\n`chancer.areacode`: Returns a random area code.\n\nThere are lots of others already included in the package, with more to follow! ",
+    "created" : 1418326911087.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4167485078",
+    "id" : "F7644CAA",
+    "lastKnownWriteTime" : 1418329044,
+    "path" : "~/Dropbox/martin/github/chancer/readme.md",
+    "project_path" : "readme.md",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "markdown"
+}

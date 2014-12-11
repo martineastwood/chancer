@@ -1,0 +1,17 @@
+{
+    "contents" : "test_that(\"chance.misc works as expected\", {\n  \n  set.seed(86858246)\n  \n  expect_that(chance.pick(c(1, 2, 3)), equals(1))\n  \n  expect_that(chance.weighted(c(1, 2, 3), c(0.5, 0.3, 0.2)), equals(2))\n  \n  expect_that(chance.hash(), equals(\"3c996c26d0e9675cad9d1025783791ad7e6d936d94c058f3f9e3797eb897d138\"))\n  expect_that(chance.hash(case='upper'), equals(\"D5F58A87560D1E0839558F49325F77CFFA19FF2A1DBE909439291868D97F4ADA\"))\n  \n  expect_that(chance.capitalise('test'), equals(\"Test\"))\n  \n  expect_that(chance.guid(), equals(\"92b7fbbb-fb42-0a0e-ad5b-b0ffa2506a5f\"))\n  \n})",
+    "created" : 1417794951364.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2462864381",
+    "id" : "9C4B4A30",
+    "lastKnownWriteTime" : 1417795256,
+    "path" : "~/Dropbox/Martin/github/chance/tests/testthat/test-misc.R",
+    "project_path" : "tests/testthat/test-misc.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

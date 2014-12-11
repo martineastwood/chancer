@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Select a random element from a vector\n#'\n#' @param vec vector to select from\n#' @export\n#' @examples\n#' chance.pick(c(1, 2, 3, 4))\nchance.pick <- function(vec=NULL){\n  \n  if(is.null(vec)){\n    stop('a vector of data must be provided to select from')\n  }\n  \n  return(sample(vec, 1))\n}\n\n\n#' Selects a random element from a vector using weighted probabilities\n#'\n#' @param vec vector to select from\n#' @export\n#' @examples\n#' chance.weighted(c(1, 2, 3), c(0.5, 0.4, 0.1))\nchance.weighted <- function(vec=NULL, probs=NULL){\n  \n  if(is.null(vec) || is.null(probs) || length(vec) != length(probs)){\n    stop('vectors of equal lengths must be supplied for the data and \n         their probabilities')\n  }\n  \n  return(sample(vec, 1, prob=probs))\n}\n\n#' Get a random hex hash\n#'\n#' @param case can be 'upper' or 'lower'\n#' @param len length of hash, defaults to 64\n#' @export\n#' @examples\n#' chance.hash()\n#' chance.hash(case='upper')\nchance.hash <- function(len=64, case='lower'){\n  \n  if(!case %in% c('lower', 'upper')){\n    stop(\"case must be one of lower or upper\")\n  }\n  \n  pool <- HEX_POOL\n  \n  if(case=='upper'){\n    pool <- toupper(pool)\n  }\n  \n  chance.string(len=len, user=pool)\n}\n\n\n#' Helper function to capitalise first char in string\n#'\n#' @param word string to capitalise\n#' @param len length of hash, defaults to 64\n#' @export\n#' @examples\n#' chance.hash()\n#' chance.hash(case='upper')\nchance.capitalise <- function(word){\n  return(paste0(toupper(substring(word, 1,1)), substring(word, 2, nchar(word))))\n}\n\n\n#' Retun a guid\n#'\n#' @export\n#' @examples\n#' chance.guid()\nchance.guid <- function(){\n  \n  guid_pool <- \"abcdef1234567890\"\n  variant_pool <- \"ab89\"\n  \n  guid <- paste0(chance.string(8, user=guid_pool), \"-\",\n                 chance.string(4, user=guid_pool), \"-\",\n                 chance.string(4, user=guid_pool), \"-\",\n                 chance.string(4, user=guid_pool), \"-\",\n                 chance.string(12, user=guid_pool))\n  return(guid)\n}\n",
+    "created" : 1417793932393.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3254398268",
+    "id" : "DBE71105",
+    "lastKnownWriteTime" : 1417795111,
+    "path" : "~/Dropbox/Martin/github/chance/R/misc.R",
+    "project_path" : "R/misc.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

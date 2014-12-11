@@ -1,0 +1,11 @@
+Package: chancer
+Type: Package
+Title: Random generator or numbers, names, text etc
+Version: 1.0
+Date: 2014-12-01
+Author: Martin Eastwood
+Maintainer: <martin.eastwood1@gmail.com>
+Description: Chancer is a minimalist generator of random strings, numbers, etc.
+    to help reduce some monotony particularly while writing automated tests or
+    anywhere else you need anything random. Inspired by http://chancejs.com/
+License: GPL-3

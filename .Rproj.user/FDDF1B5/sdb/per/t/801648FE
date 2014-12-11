@@ -1,0 +1,17 @@
+{
+    "contents" : "#' Get a random Android GCM registration ID\n#'\n#' @export\n#' @examples\n#' chance.android_id()\nchance.android_id <- function(){\n  \n  pool <- \"0123456789abcefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_\"\n  \n  id <- chance.string(178, user=pool)\n  \n  id <- paste0(\"APA91\", id, collapse='')\n  \n  return(id)\n}\n\n#' Get a random Apple Push Token\n#'\n#' @export\n#' @examples\n#' chance.apple_token()\nchance.apple_token <- function(){\n  \n  pool <- \"abcdef1234567890\"\n  \n  id <- chance.string(64, user=pool)\n  \n  return(id)\n}\n \n#' Get a random BlackBerry pin\n#'\n#' @export\n#' @examples\n#' chance.bb_pin()\nchance.bb_pin <- function(){\n  return(chance.hash(8))\n}\n\n#' Get a random Windows Phone 7 ANID\n#'\n#' @export\n#' @examples\n#' chance.wp7_anid()\nchance.wp7_anid <- function(){\n  anid <- paste0('A=', chance)\n  return(chance.hash(8))\n}\n\n\n#return 'A=' + this.guid().replace(/-/g, '').toUpperCase() + '&E=' + this.hash({ length:3 }) + '&W=' + this.integer({ min:0, max:9 });",
+    "created" : 1417792340065.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2366438780",
+    "id" : "801648FE",
+    "lastKnownWriteTime" : 1418199358,
+    "path" : "~/Dropbox/Martin/github/chance/R/mobile.R",
+    "project_path" : "R/mobile.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

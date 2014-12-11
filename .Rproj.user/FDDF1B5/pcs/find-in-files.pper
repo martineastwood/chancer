@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "~/Dropbox/Martin/github/chance",
+        "query" : "chance.prefix(TRUE)",
+        "regex" : false
+    }
+}

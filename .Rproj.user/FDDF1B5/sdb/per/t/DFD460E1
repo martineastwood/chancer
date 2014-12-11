@@ -1,0 +1,17 @@
+{
+    "contents" : "test_that(\"chance.mobile works as expected\", {\n  \n  set.seed(86858246)\n  \n  expect_that(chance.android_id(), equals(\"APA91jOeNDCpO8pQ1XCquoQFSDT43blvzeuD4HRwXqSAcpSEiO3lxYf-DXgtCtVLxDuS5czUm-nAFzump2R7W1ycAmkxYhDf9k-twN-YH7CYY9G7RLUA1CjeBaC5zsySBvZiFQGWv6Pm677l7Dv-2_i0gE64Ynl3tG-J1GoWLYYqewTFvvaYAVH\"))\n    \n  expect_that(chance.apple_token(), equals(\"45c7e1c93ab81a9421ec5c1cb5e9ea1c6a41845ee92b1b8f03a6340272b7d715\"))\n  \n  expect_that(chance.bb_pin(), equals(\"49511dd1\"))\n  \n  \n})",
+    "created" : 1417792263815.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "227691035",
+    "id" : "DFD460E1",
+    "lastKnownWriteTime" : 1417795265,
+    "path" : "~/Dropbox/Martin/github/chance/tests/testthat/test-mobile.R",
+    "project_path" : "tests/testthat/test-mobile.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
