@@ -1,4 +1,4 @@
-## Chancer - Friendly Regular Expressions For R
+## Chancer - Creating Random Data in R
 
 Chancer is an R package for generating of random strings, numbers, addresses etc to help write automated tests or create anything random you need. Chancer was inspired by the javascript library [chance.js](http://chancejs.com).
 
